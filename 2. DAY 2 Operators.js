@@ -94,3 +94,129 @@ arithmeticOperation(5, 19, "-");
 arithmeticOperation(5, 0, "/"); // to test division by zero
 arithmeticOperation(5, 0, "%"); // to test division by zero
 arithmeticOperation(10, 2, "*");
+
+// Activity 2: Assignment Operators
+
+// • Task 6: Use the += operator to add a number to a variable and log the result to the console.
+// • Task 7: Use the -= operator to subtract a number from a variable and log the result to the console.
+
+let subb = 6;
+subb -= 2;
+console.log("The subtraction is:", subb);
+let summ = 10;
+summ += 5;
+console.log("the addition is:", summ);
+
+// Activity 3: Comparison Operators
+
+// • Task 8: Write a program to compare two numbers using > and < and log the result to the console.
+
+// • Task 9: Write a program to compare two numbers using >= and <= and log the result to the console.
+
+// • Task 10: Write a program to compare two numbers using and and log the result to the console.
+
+function compareNumber(a, b) {
+  if (a > b) {
+    console.log(`${a} is greater than ${b}`);
+  }
+  if (a < b) {
+    console.log(`${a} is less than ${b}`);
+  }
+  if (a == b) {
+    console.log(`${a} is equal to ${b}`);
+  }
+}
+compareNumber(10, 9);
+compareNumber(100, 100);
+compareNumber(0, 9);
+compareNumber(50, 90);
+
+function compareNumbersGreaterEqualLessEqual(a, b) {
+  if (a >= b) {
+    console.log(`${a} is greater than or equal to ${b}`);
+  } else if (a <= b) {
+    console.log(`${a} is less than or equal to ${b}`);
+  }
+}
+
+compareNumbersGreaterEqualLessEqual(10, 5);
+compareNumbersGreaterEqualLessEqual(5, 10);
+compareNumbersGreaterEqualLessEqual(7, 7);
+
+function compareNumbersAnd(a, b) {
+  if (a >= 0 && b >= 0) {
+    console.log(`Both ${a} and ${b} are positive numbers`);
+  } else if (a < 0 && b < 0) {
+    console.log(`Both ${a} and ${b} are negative numbers`);
+  } else {
+    console.log(
+      `One of ${a} or ${b} is positive and the other is non-positive`
+    );
+  }
+}
+
+// Example usage:
+compareNumbersAnd(10, 5); // Logs: Both 10 and 5 are positive numbers
+compareNumbersAnd(-5, -10); // Logs: Both -5 and -10 are non-positive numbers
+compareNumbersAnd(7, -3); // Logs: One of 7 or -3 is positive and the other is non-positive
+
+// Activity 4: Logical Operators
+
+// Task 11: Write a program that uses the && operator to combine two conditions and log the result to the console.
+
+// • Task 12: Write a program that uses the || operator to combine two conditions and log the result to the console.
+
+// • Task 13: Write a program that uses the! operator to negate a condition and log the result to the console.
+
+function combineConditionsAnd(a, b) {
+  if (a > 0 && b > 0) {
+    console.log(`Both ${a} and ${b} are positive numbers`);
+  } else {
+    console.log(`Either ${a} or ${b} (or both) are not positive numbers`);
+  }
+}
+
+combineConditionsAnd(10, 5);
+combineConditionsAnd(10, -5);
+combineConditionsAnd(-10, -5);
+
+function combineConditionsOr(a, b) {
+  if (a > 0 || b > 0) {
+    console.log(`At least one of ${a} or ${b} is a positive number`);
+  } else {
+    console.log(`Neither ${a} nor ${b} are positive numbers`);
+  }
+}
+
+combineConditionsOr(10, 5);
+combineConditionsOr(10, -5);
+combineConditionsOr(-10, -5);
+
+function negateCondition(a) {
+  if (!a) {
+    console.log(`${a} is falsy`);
+  } else {
+    console.log(`${a} is truthy`);
+  }
+}
+
+// Example usage:
+negateCondition(0); // Logs: 0 is falsy
+negateCondition(1); // Logs: 1 is truthy
+negateCondition(""); // Logs:  is falsy
+negateCondition("Hello"); // Logs: Hello is truthy
+negateCondition(null); // Logs: null is falsy
+negateCondition(undefined); // Logs: undefined is falsy
+
+// Activity 5: Ternary Operator
+
+// • Task 14: Write a program that uses the ternary operator to check if a numbe is positive or negative and log the result to the console.
+
+function checkPositiveOrNegative(num) {
+  const result = num > 0 ? `${num} is positive` : `${num} is negative`;
+
+  console.log(result);
+}
+checkPositiveOrNegative(10);
+checkPositiveOrNegative(0);
+checkPositiveOrNegative(-10);
