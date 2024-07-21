@@ -57,3 +57,52 @@ console.log(`the factorial of ${n} is ${fact}`);
 // * * *
 // * * * *
 // * * * * *
+
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row += "*";
+  }
+  console.log(row);
+}
+
+// Activity 5: Loop Control Statements
+
+// • Task 8: Write a program to print numbers from 1 to 10, but skip the number 5 using the continue statement.
+
+let c;
+for (c = 1; c <= 10; c++) {
+  if (c === 5) {
+    continue;
+  }
+  console.log(c);
+}
+// • Task 9: Write a program to print numbers from 1 to 10, but stop the  loop when the number is 7 using the break statement.
+
+let k;
+for (k = 1; k <= 10; k++) {
+  if (k === 7) {
+    break;
+  }
+  console.log(k);
+}
+
+// Feature Request:
+
+// 1. Number Printing Script: Write a script that prints numbers from 1 to 10 using a for loop and a while loop.
+console.log("prints numbers from 1 to 10 using a for loop and a while loop");
+let numbers = 1;
+while (numbers <= 10) {
+  console.log(numbers);
+  numbers++;
+}
+// 2. Multiplication Table Script : Create a script that prints the multiplication table of 5 using a for loop.
+for (let i = 1; i <= 10; i++) {
+  result = 5 * i;
+  console.log("Multiplication of table 5 is:", result);
+}
+
+// 3 Pattern Printing Script: Write a script that prints a pattern of stars using nested loops.
+
+// 4. Sum Calculation Script: Write a script that calculates the sum of numbers from 1 to 10 using a while loop.
+//5. Factorial Calculation Script: Create a script that calculates the factorial of a number using a do...while loop.
